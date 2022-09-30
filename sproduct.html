@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>E-commerce Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/2e794bd3aa.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <!-- ......Home Section...... -->
+        <div class="container">
+            <div class="header">
+                <div class="navbar"> 
+                    <div class="dreyy">
+                        <h1><span>D</span>dreyy <span>O</span>nline <span>S</span>tore</h1>
+                    </div>
+                    <nav>
+                        <ul id="menuItems">
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="product.html" >Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html" >Contact Us</a></li> 
+                        </ul> 
+                    </nav>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!-- sale product -->
+        <div class="sproduct">
+            <div class="row-1">
+                <div class="col-2 left-section">
+                    <img src="images/plain2.jpg" width="100%" id="productImage">
+                    <div class="small-images">
+                        <div class="small-images-col-4" >
+                            <img src="images/plain2.jpg" width="100%" class="small-image">
+                        </div>
+                        <div class="small-images-col-4" >
+                            <img src="images/plain1.jpg" width="100%" class="small-image">
+                        </div>
+                        <div class="small-images-col-4">
+                            <img src="images/plain3.jpg" width="100%" class="small-image">
+                        </div>
+                        <div class="small-images-col-4">
+                            <img src="images/plain4.jpg" width="100%" class="small-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 right-section">
+                    <h5>Home / T-shirt</h5>
+                    <br>
+                    <h4>Men's Fashion T-shirt</h4>
+                    <h4>&#8358 5,000</h4><br>
+                    <select class="select">
+                        <option>Select Size</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>XL</option>
+                    </select>
+                    <br>
+                    <input type="number" value="1" class="number">
+                    <button class="add-cart">Add to cart</button>
+                    <h4>Product Details</h4><br>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae<br> quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam<br> blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque <br>rerum! Provident similique accusantium nemo autem</h6>
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+         <!-- discount -->
+         <div class="discount">
+            <h4>Discount Offer</h4>
+            <h1>We have <span>50% </span>discount for customers that Purchases between 25th - 30th of this month</h1>
+            <a href="" class="btn1">Explore</a>
+        </div>
+
+
+
+        
+        <!--- about, account, download -->
+        <div class="download">
+            <div class="row">
+                <div class="col-3">
+                    <div class="account">
+                        <p>My Account</p>
+                        <br>
+                        <p>Sign In</p>
+                        <br>
+                        <p>View Cart</p>
+                        <br>
+                        <p>Help</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <p>Download App</p>
+                    <br>
+                    <p>From App Store or Google Play</p>
+                    <br>
+                    <img src="images/google-playstore.png" width="120px">
+                    <br>
+                    <img src="images/app-store-logo.png" width="120px">
+                </div>
+                <div class="col-3">
+                    <div>
+                        <p>Follow Us</p>
+                        <div class="follow">
+                            <ul>
+                                <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+                                <li><i class="fa-brands fa-square-facebook"></i>Facebook</li>
+                                <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &#169 <span>D</span>dreyy Store </p>
+        </div>  
+
+
+        <!-- js toggle menu -->
+        <script>
+            let menuItems = document.getElementById('menuItems')
+
+            menuItems.style.maxHeight = "0px"
+
+            function menutoggle(){
+                if(menuItems.style.maxHeight == "0px")
+                {
+                    menuItems.style.maxHeight = "200px" 
+                }
+                else{
+                    menuItems.style.maxHeight = "0px" 
+                }
+            }
+
+        var mainImage = document.getElementById('productImage')    
+        var smallImages = document.getElementsByClassName('small-image')
+
+        
+        smallImages[0].onclick = function(){
+            mainImage.src = smallImages[0].src;
+        }
+        
+        smallImages[1].onclick = function(){
+            mainImage.src = smallImages[1].src;
+        }
+
+        smallImages[2].onclick = function(){
+            mainImage.src = smallImages[2].src;
+        }
+
+        smallImages[3].onclick = function(){
+            mainImage.src = smallImages[3].src;
+        }
+        
+
+        </script>
+    </body>
+</html>

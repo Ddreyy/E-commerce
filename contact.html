@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>E-commerce Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/2e794bd3aa.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <!-- ......Home Section...... -->
+        <div class="container">
+            <div class="header">
+                <div class="navbar"> 
+                    <div class="dreyy">
+                        <h1><span>D</span>dreyy <span>O</span>nline <span>S</span>tore</h1>
+                    </div>
+                    <nav>
+                        <ul id="menuItems">
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="product.html" >Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html" >Contact Us</a></li> 
+                        </ul> 
+                    </nav>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+                
+            </div>
+        </div>
+        
+
+      
+
+
+        <!-- sign up -->
+        <div class="signup">
+            <div class="row">
+                <div class="col-2">
+                    <h1>Signup For NewsLetters</h1>
+                    <p>Get E-mail updates about our <span>special offer</span></p>
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Enter Your Email Address" class="text">
+                    <a href="" class="btn-3">Sign Up</a>
+                </div>
+            </div>
+        </div> 
+
+        <!--- about, account, download -->
+        <div class="download">
+            <div class="row">
+                <div class="col-3">
+                    <div class="account">
+                        <p>My Account</p>
+                        <br>
+                        <p>Sign In</p>
+                        <br>
+                        <p>View Cart</p>
+                        <br>
+                        <p>Help</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <p>Download App</p>
+                    <br>
+                    <p>From App Store or Google Play</p>
+                    <br>
+                    <img src="images/google-playstore.png" width="120px">
+                    <br>
+                    <img src="images/app-store-logo.png" width="120px">
+                </div>
+                <div class="col-3">
+                    <div>
+                        <p>Follow Us</p>
+                        <div class="follow">
+                            <ul>
+                                <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+                                <li><i class="fa-brands fa-square-facebook"></i>Facebook</li>
+                                <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &#169 <span>D</span>dreyy Store </p>
+        </div>  
+
+
+        <!-- js toggle menu -->
+        <script>
+            var menuItems = document.getElementById('menuItems')
+
+            menuItems.style.maxHeight = "0px"
+
+            function menutoggle(){
+                if(menuItems.style.maxHeight == "0px")
+                {
+                    menuItems.style.maxHeight = "200px" 
+                }
+                else{
+                    menuItems.style.maxHeight = "0px" 
+                }
+                }
+
+
+        </script>
+    </body>
+</html>
